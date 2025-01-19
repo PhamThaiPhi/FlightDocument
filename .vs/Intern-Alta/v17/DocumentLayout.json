@@ -1,62 +1,126 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\admin\\source\\repos\\FlightDocs\\Intern-Alta\\",
+  "WorkspaceRootPath": "C:\\Users\\admin\\source\\repos\\flightdocument\\Intern-Alta\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\admin\\source\\repos\\FlightDocs\\Intern-Alta\\Intern-Alta\\Migrations\\20250115181336_CreatePermissionsSettingsAndConfigurationTables.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Intern-Alta\\Migrations\\20250115181336_CreatePermissionsSettingsAndConfigurationTables.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2AA0E67-A6AE-4F46-8699-CAE9A88BF656}|Intern-Alta\\Intern-Alta.csproj|c:\\users\\admin\\source\\repos\\flightdocument\\intern-alta\\intern-alta\\services\\flights\\iflightservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2AA0E67-A6AE-4F46-8699-CAE9A88BF656}|Intern-Alta\\Intern-Alta.csproj|solutionrelative:intern-alta\\services\\flights\\iflightservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2AA0E67-A6AE-4F46-8699-CAE9A88BF656}|Intern-Alta\\Intern-Alta.csproj|c:\\users\\admin\\source\\repos\\flightdocs\\intern-alta\\intern-alta\\data\\mydbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2AA0E67-A6AE-4F46-8699-CAE9A88BF656}|Intern-Alta\\Intern-Alta.csproj|solutionrelative:intern-alta\\data\\mydbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2AA0E67-A6AE-4F46-8699-CAE9A88BF656}|Intern-Alta\\Intern-Alta.csproj|c:\\users\\admin\\source\\repos\\flightdocument\\intern-alta\\intern-alta\\services\\flights\\flightservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2AA0E67-A6AE-4F46-8699-CAE9A88BF656}|Intern-Alta\\Intern-Alta.csproj|solutionrelative:intern-alta\\services\\flights\\flightservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2AA0E67-A6AE-4F46-8699-CAE9A88BF656}|Intern-Alta\\Intern-Alta.csproj|c:\\users\\admin\\source\\repos\\flightdocs\\intern-alta\\intern-alta\\data\\configuration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{A2AA0E67-A6AE-4F46-8699-CAE9A88BF656}|Intern-Alta\\Intern-Alta.csproj|c:\\users\\admin\\source\\repos\\flightdocument\\intern-alta\\intern-alta\\controllers\\documenttypecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2AA0E67-A6AE-4F46-8699-CAE9A88BF656}|Intern-Alta\\Intern-Alta.csproj|solutionrelative:intern-alta\\controllers\\documenttypecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2AA0E67-A6AE-4F46-8699-CAE9A88BF656}|Intern-Alta\\Intern-Alta.csproj|c:\\users\\admin\\source\\repos\\flightdocument\\intern-alta\\intern-alta\\controllers\\documentscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2AA0E67-A6AE-4F46-8699-CAE9A88BF656}|Intern-Alta\\Intern-Alta.csproj|solutionrelative:intern-alta\\controllers\\documentscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2AA0E67-A6AE-4F46-8699-CAE9A88BF656}|Intern-Alta\\Intern-Alta.csproj|c:\\users\\admin\\source\\repos\\flightdocument\\intern-alta\\intern-alta\\services\\documents\\idocumentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2AA0E67-A6AE-4F46-8699-CAE9A88BF656}|Intern-Alta\\Intern-Alta.csproj|solutionrelative:intern-alta\\services\\documents\\idocumentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2AA0E67-A6AE-4F46-8699-CAE9A88BF656}|Intern-Alta\\Intern-Alta.csproj|c:\\users\\admin\\source\\repos\\flightdocument\\intern-alta\\intern-alta\\services\\documents\\documentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2AA0E67-A6AE-4F46-8699-CAE9A88BF656}|Intern-Alta\\Intern-Alta.csproj|solutionrelative:intern-alta\\services\\documents\\documentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2AA0E67-A6AE-4F46-8699-CAE9A88BF656}|Intern-Alta\\Intern-Alta.csproj|c:\\users\\admin\\source\\repos\\flightdocument\\intern-alta\\intern-alta\\data\\configuration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A2AA0E67-A6AE-4F46-8699-CAE9A88BF656}|Intern-Alta\\Intern-Alta.csproj|solutionrelative:intern-alta\\data\\configuration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2AA0E67-A6AE-4F46-8699-CAE9A88BF656}|Intern-Alta\\Intern-Alta.csproj|c:\\users\\admin\\source\\repos\\flightdocs\\intern-alta\\intern-alta\\data\\permission.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2AA0E67-A6AE-4F46-8699-CAE9A88BF656}|Intern-Alta\\Intern-Alta.csproj|solutionrelative:intern-alta\\data\\permission.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2AA0E67-A6AE-4F46-8699-CAE9A88BF656}|Intern-Alta\\Intern-Alta.csproj|c:\\users\\admin\\source\\repos\\flightdocument\\intern-alta\\intern-alta\\models\\docmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2AA0E67-A6AE-4F46-8699-CAE9A88BF656}|Intern-Alta\\Intern-Alta.csproj|solutionrelative:intern-alta\\models\\docmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\admin\\source\\repos\\FlightDocs\\Intern-Alta\\Intern-Alta\\Migrations\\20250115181058_CreateUsersAndRolesTables.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Intern-Alta\\Migrations\\20250115181058_CreateUsersAndRolesTables.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2AA0E67-A6AE-4F46-8699-CAE9A88BF656}|Intern-Alta\\Intern-Alta.csproj|c:\\users\\admin\\source\\repos\\flightdocument\\intern-alta\\intern-alta\\models\\doctypemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2AA0E67-A6AE-4F46-8699-CAE9A88BF656}|Intern-Alta\\Intern-Alta.csproj|solutionrelative:intern-alta\\models\\doctypemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2AA0E67-A6AE-4F46-8699-CAE9A88BF656}|Intern-Alta\\Intern-Alta.csproj|c:\\users\\admin\\source\\repos\\flightdocs\\intern-alta\\intern-alta\\data\\users.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2AA0E67-A6AE-4F46-8699-CAE9A88BF656}|Intern-Alta\\Intern-Alta.csproj|solutionrelative:intern-alta\\data\\users.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2AA0E67-A6AE-4F46-8699-CAE9A88BF656}|Intern-Alta\\Intern-Alta.csproj|c:\\users\\admin\\source\\repos\\flightdocument\\intern-alta\\intern-alta\\services\\documenttype\\doctypeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2AA0E67-A6AE-4F46-8699-CAE9A88BF656}|Intern-Alta\\Intern-Alta.csproj|solutionrelative:intern-alta\\services\\documenttype\\doctypeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2AA0E67-A6AE-4F46-8699-CAE9A88BF656}|Intern-Alta\\Intern-Alta.csproj|c:\\users\\admin\\source\\repos\\flightdocs\\intern-alta\\intern-alta\\data\\documenttype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{A2AA0E67-A6AE-4F46-8699-CAE9A88BF656}|Intern-Alta\\Intern-Alta.csproj|c:\\users\\admin\\source\\repos\\flightdocument\\intern-alta\\intern-alta\\controllers\\weatherforecastcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2AA0E67-A6AE-4F46-8699-CAE9A88BF656}|Intern-Alta\\Intern-Alta.csproj|solutionrelative:intern-alta\\controllers\\weatherforecastcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2AA0E67-A6AE-4F46-8699-CAE9A88BF656}|Intern-Alta\\Intern-Alta.csproj|c:\\users\\admin\\source\\repos\\flightdocument\\intern-alta\\intern-alta\\controllers\\flightcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2AA0E67-A6AE-4F46-8699-CAE9A88BF656}|Intern-Alta\\Intern-Alta.csproj|solutionrelative:intern-alta\\controllers\\flightcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2AA0E67-A6AE-4F46-8699-CAE9A88BF656}|Intern-Alta\\Intern-Alta.csproj|c:\\users\\admin\\source\\repos\\flightdocument\\intern-alta\\intern-alta\\services\\documenttype\\idoctypeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2AA0E67-A6AE-4F46-8699-CAE9A88BF656}|Intern-Alta\\Intern-Alta.csproj|solutionrelative:intern-alta\\services\\documenttype\\idoctypeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2AA0E67-A6AE-4F46-8699-CAE9A88BF656}|Intern-Alta\\Intern-Alta.csproj|c:\\users\\admin\\source\\repos\\flightdocument\\intern-alta\\intern-alta\\data\\documenttype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A2AA0E67-A6AE-4F46-8699-CAE9A88BF656}|Intern-Alta\\Intern-Alta.csproj|solutionrelative:intern-alta\\data\\documenttype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2AA0E67-A6AE-4F46-8699-CAE9A88BF656}|Intern-Alta\\Intern-Alta.csproj|c:\\users\\admin\\source\\repos\\flightdocs\\intern-alta\\intern-alta\\data\\flights.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2AA0E67-A6AE-4F46-8699-CAE9A88BF656}|Intern-Alta\\Intern-Alta.csproj|solutionrelative:intern-alta\\data\\flights.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2AA0E67-A6AE-4F46-8699-CAE9A88BF656}|Intern-Alta\\Intern-Alta.csproj|c:\\users\\admin\\source\\repos\\flightdocs\\intern-alta\\intern-alta\\data\\roles.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2AA0E67-A6AE-4F46-8699-CAE9A88BF656}|Intern-Alta\\Intern-Alta.csproj|solutionrelative:intern-alta\\data\\roles.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2AA0E67-A6AE-4F46-8699-CAE9A88BF656}|Intern-Alta\\Intern-Alta.csproj|c:\\users\\admin\\source\\repos\\flightdocs\\intern-alta\\intern-alta\\data\\documents.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{A2AA0E67-A6AE-4F46-8699-CAE9A88BF656}|Intern-Alta\\Intern-Alta.csproj|c:\\users\\admin\\source\\repos\\flightdocument\\intern-alta\\intern-alta\\data\\documents.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A2AA0E67-A6AE-4F46-8699-CAE9A88BF656}|Intern-Alta\\Intern-Alta.csproj|solutionrelative:intern-alta\\data\\documents.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\admin\\source\\repos\\FlightDocs\\Intern-Alta\\Intern-Alta\\Migrations\\20250115180358_AddDocumentsAndDocumentTypes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Intern-Alta\\Migrations\\20250115180358_AddDocumentsAndDocumentTypes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\admin\\source\\repos\\FlightDocs\\Intern-Alta\\Intern-Alta\\Migrations\\20250115174710_Dbinit.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Intern-Alta\\Migrations\\20250115174710_Dbinit.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2AA0E67-A6AE-4F46-8699-CAE9A88BF656}|Intern-Alta\\Intern-Alta.csproj|c:\\users\\admin\\source\\repos\\flightdocs\\intern-alta\\intern-alta\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{A2AA0E67-A6AE-4F46-8699-CAE9A88BF656}|Intern-Alta\\Intern-Alta.csproj|c:\\users\\admin\\source\\repos\\flightdocument\\intern-alta\\intern-alta\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A2AA0E67-A6AE-4F46-8699-CAE9A88BF656}|Intern-Alta\\Intern-Alta.csproj|solutionrelative:intern-alta\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2AA0E67-A6AE-4F46-8699-CAE9A88BF656}|Intern-Alta\\Intern-Alta.csproj|c:\\users\\admin\\source\\repos\\flightdocs\\intern-alta\\intern-alta\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "AbsoluteMoniker": "D:0:0:{A2AA0E67-A6AE-4F46-8699-CAE9A88BF656}|Intern-Alta\\Intern-Alta.csproj|c:\\users\\admin\\source\\repos\\flightdocument\\intern-alta\\intern-alta\\data\\flights.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2AA0E67-A6AE-4F46-8699-CAE9A88BF656}|Intern-Alta\\Intern-Alta.csproj|solutionrelative:intern-alta\\data\\flights.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2AA0E67-A6AE-4F46-8699-CAE9A88BF656}|Intern-Alta\\Intern-Alta.csproj|c:\\users\\admin\\source\\repos\\flightdocument\\intern-alta\\intern-alta\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{A2AA0E67-A6AE-4F46-8699-CAE9A88BF656}|Intern-Alta\\Intern-Alta.csproj|solutionrelative:intern-alta\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2AA0E67-A6AE-4F46-8699-CAE9A88BF656}|Intern-Alta\\Intern-Alta.csproj|c:\\users\\admin\\source\\repos\\flightdocument\\intern-alta\\intern-alta\\data\\users.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2AA0E67-A6AE-4F46-8699-CAE9A88BF656}|Intern-Alta\\Intern-Alta.csproj|solutionrelative:intern-alta\\data\\users.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2AA0E67-A6AE-4F46-8699-CAE9A88BF656}|Intern-Alta\\Intern-Alta.csproj|c:\\users\\admin\\source\\repos\\flightdocument\\intern-alta\\intern-alta\\data\\roles.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2AA0E67-A6AE-4F46-8699-CAE9A88BF656}|Intern-Alta\\Intern-Alta.csproj|solutionrelative:intern-alta\\data\\roles.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2AA0E67-A6AE-4F46-8699-CAE9A88BF656}|Intern-Alta\\Intern-Alta.csproj|c:\\users\\admin\\source\\repos\\flightdocument\\intern-alta\\intern-alta\\data\\mydbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2AA0E67-A6AE-4F46-8699-CAE9A88BF656}|Intern-Alta\\Intern-Alta.csproj|solutionrelative:intern-alta\\data\\mydbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2AA0E67-A6AE-4F46-8699-CAE9A88BF656}|Intern-Alta\\Intern-Alta.csproj|c:\\users\\admin\\source\\repos\\flightdocument\\intern-alta\\intern-alta\\data\\permission.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2AA0E67-A6AE-4F46-8699-CAE9A88BF656}|Intern-Alta\\Intern-Alta.csproj|solutionrelative:intern-alta\\data\\permission.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2AA0E67-A6AE-4F46-8699-CAE9A88BF656}|Intern-Alta\\Intern-Alta.csproj|c:\\users\\admin\\source\\repos\\flightdocument\\intern-alta\\intern-alta\\migrations\\20250115181336_createpermissionssettingsandconfigurationtables.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2AA0E67-A6AE-4F46-8699-CAE9A88BF656}|Intern-Alta\\Intern-Alta.csproj|solutionrelative:intern-alta\\migrations\\20250115181336_createpermissionssettingsandconfigurationtables.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2AA0E67-A6AE-4F46-8699-CAE9A88BF656}|Intern-Alta\\Intern-Alta.csproj|c:\\users\\admin\\source\\repos\\flightdocument\\intern-alta\\intern-alta\\migrations\\20250115181058_createusersandrolestables.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2AA0E67-A6AE-4F46-8699-CAE9A88BF656}|Intern-Alta\\Intern-Alta.csproj|solutionrelative:intern-alta\\migrations\\20250115181058_createusersandrolestables.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2AA0E67-A6AE-4F46-8699-CAE9A88BF656}|Intern-Alta\\Intern-Alta.csproj|c:\\users\\admin\\source\\repos\\flightdocument\\intern-alta\\intern-alta\\migrations\\20250115180358_adddocumentsanddocumenttypes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2AA0E67-A6AE-4F46-8699-CAE9A88BF656}|Intern-Alta\\Intern-Alta.csproj|solutionrelative:intern-alta\\migrations\\20250115180358_adddocumentsanddocumenttypes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2AA0E67-A6AE-4F46-8699-CAE9A88BF656}|Intern-Alta\\Intern-Alta.csproj|c:\\users\\admin\\source\\repos\\flightdocument\\intern-alta\\intern-alta\\migrations\\20250115174710_dbinit.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2AA0E67-A6AE-4F46-8699-CAE9A88BF656}|Intern-Alta\\Intern-Alta.csproj|solutionrelative:intern-alta\\migrations\\20250115174710_dbinit.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\admin\\source\\repos\\flightdocument\\Intern-Alta\\Intern-Alta\\Service\\FlightService.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Intern-Alta\\Service\\FlightService.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\admin\\source\\repos\\flightdocument\\Intern-Alta\\Intern-Alta\\Service\\IFlightService.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Intern-Alta\\Service\\IFlightService.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2AA0E67-A6AE-4F46-8699-CAE9A88BF656}|Intern-Alta\\Intern-Alta.csproj|c:\\users\\admin\\source\\repos\\flightdocument\\intern-alta\\intern-alta\\migrations\\20250119083256_updatedocanddoctype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2AA0E67-A6AE-4F46-8699-CAE9A88BF656}|Intern-Alta\\Intern-Alta.csproj|solutionrelative:intern-alta\\migrations\\20250119083256_updatedocanddoctype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2AA0E67-A6AE-4F46-8699-CAE9A88BF656}|Intern-Alta\\Intern-Alta.csproj|c:\\users\\admin\\source\\repos\\flightdocument\\intern-alta\\intern-alta\\migrations\\20250119090746_updatedoctype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2AA0E67-A6AE-4F46-8699-CAE9A88BF656}|Intern-Alta\\Intern-Alta.csproj|solutionrelative:intern-alta\\migrations\\20250119090746_updatedoctype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -66,28 +130,41 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "20250115181336_CreatePermissionsSettingsAndConfigurationTables.cs",
-              "DocumentMoniker": "C:\\Users\\admin\\source\\repos\\FlightDocs\\Intern-Alta\\Intern-Alta\\Migrations\\20250115181336_CreatePermissionsSettingsAndConfigurationTables.cs",
-              "RelativeDocumentMoniker": "Intern-Alta\\Migrations\\20250115181336_CreatePermissionsSettingsAndConfigurationTables.cs",
-              "ToolTip": "C:\\Users\\admin\\source\\repos\\FlightDocs\\Intern-Alta\\Intern-Alta\\Migrations\\20250115181336_CreatePermissionsSettingsAndConfigurationTables.cs",
-              "RelativeToolTip": "Intern-Alta\\Migrations\\20250115181336_CreatePermissionsSettingsAndConfigurationTables.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 5,
+              "Title": "DocumentService.cs",
+              "DocumentMoniker": "C:\\Users\\admin\\source\\repos\\flightdocument\\Intern-Alta\\Intern-Alta\\Services\\Documents\\DocumentService.cs",
+              "RelativeDocumentMoniker": "Intern-Alta\\Services\\Documents\\DocumentService.cs",
+              "ToolTip": "C:\\Users\\admin\\source\\repos\\flightdocument\\Intern-Alta\\Intern-Alta\\Services\\Documents\\DocumentService.cs",
+              "RelativeToolTip": "Intern-Alta\\Services\\Documents\\DocumentService.cs",
+              "ViewState": "AgIAAGIAAAAAAAAAAAAAACgAAAAXAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-15T18:13:36.199Z",
+              "WhenOpened": "2025-01-18T16:59:50.361Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
+              "Title": "IDocumentService.cs",
+              "DocumentMoniker": "C:\\Users\\admin\\source\\repos\\flightdocument\\Intern-Alta\\Intern-Alta\\Services\\Documents\\IDocumentService.cs",
+              "RelativeDocumentMoniker": "Intern-Alta\\Services\\Documents\\IDocumentService.cs",
+              "ToolTip": "C:\\Users\\admin\\source\\repos\\flightdocument\\Intern-Alta\\Intern-Alta\\Services\\Documents\\IDocumentService.cs",
+              "RelativeToolTip": "Intern-Alta\\Services\\Documents\\IDocumentService.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAAABUAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-18T16:59:28.844Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
               "Title": "Configuration.cs",
-              "DocumentMoniker": "C:\\Users\\admin\\source\\repos\\FlightDocs\\Intern-Alta\\Intern-Alta\\Data\\Configuration.cs",
+              "DocumentMoniker": "C:\\Users\\admin\\source\\repos\\flightdocument\\Intern-Alta\\Intern-Alta\\Data\\Configuration.cs",
               "RelativeDocumentMoniker": "Intern-Alta\\Data\\Configuration.cs",
-              "ToolTip": "C:\\Users\\admin\\source\\repos\\FlightDocs\\Intern-Alta\\Intern-Alta\\Data\\Configuration.cs",
+              "ToolTip": "C:\\Users\\admin\\source\\repos\\flightdocument\\Intern-Alta\\Intern-Alta\\Data\\Configuration.cs",
               "RelativeToolTip": "Intern-Alta\\Data\\Configuration.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -97,158 +174,340 @@
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "Permission.cs",
-              "DocumentMoniker": "C:\\Users\\admin\\source\\repos\\FlightDocs\\Intern-Alta\\Intern-Alta\\Data\\Permission.cs",
-              "RelativeDocumentMoniker": "Intern-Alta\\Data\\Permission.cs",
-              "ToolTip": "C:\\Users\\admin\\source\\repos\\FlightDocs\\Intern-Alta\\Intern-Alta\\Data\\Permission.cs",
-              "RelativeToolTip": "Intern-Alta\\Data\\Permission.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAABAAAAAAAAAA==",
+              "Title": "DocumentsController.cs",
+              "DocumentMoniker": "C:\\Users\\admin\\source\\repos\\flightdocument\\Intern-Alta\\Intern-Alta\\Controllers\\DocumentsController.cs",
+              "RelativeDocumentMoniker": "Intern-Alta\\Controllers\\DocumentsController.cs",
+              "ToolTip": "C:\\Users\\admin\\source\\repos\\flightdocument\\Intern-Alta\\Intern-Alta\\Controllers\\DocumentsController.cs",
+              "RelativeToolTip": "Intern-Alta\\Controllers\\DocumentsController.cs",
+              "ViewState": "AgIAACIAAAAAAAAAAAAAADIAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-15T18:12:36.699Z",
+              "WhenOpened": "2025-01-18T16:58:05.011Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "20250115181058_CreateUsersAndRolesTables.cs",
-              "DocumentMoniker": "C:\\Users\\admin\\source\\repos\\FlightDocs\\Intern-Alta\\Intern-Alta\\Migrations\\20250115181058_CreateUsersAndRolesTables.cs",
-              "RelativeDocumentMoniker": "Intern-Alta\\Migrations\\20250115181058_CreateUsersAndRolesTables.cs",
-              "ToolTip": "C:\\Users\\admin\\source\\repos\\FlightDocs\\Intern-Alta\\Intern-Alta\\Migrations\\20250115181058_CreateUsersAndRolesTables.cs",
-              "RelativeToolTip": "Intern-Alta\\Migrations\\20250115181058_CreateUsersAndRolesTables.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 2,
+              "Title": "DocumentTypeController.cs",
+              "DocumentMoniker": "C:\\Users\\admin\\source\\repos\\flightdocument\\Intern-Alta\\Intern-Alta\\Controllers\\DocumentTypeController.cs",
+              "RelativeDocumentMoniker": "Intern-Alta\\Controllers\\DocumentTypeController.cs",
+              "ToolTip": "C:\\Users\\admin\\source\\repos\\flightdocument\\Intern-Alta\\Intern-Alta\\Controllers\\DocumentTypeController.cs",
+              "RelativeToolTip": "Intern-Alta\\Controllers\\DocumentTypeController.cs",
+              "ViewState": "AgIAAE0AAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-15T18:10:59.108Z",
+              "WhenOpened": "2025-01-18T16:25:02.703Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Users.cs",
-              "DocumentMoniker": "C:\\Users\\admin\\source\\repos\\FlightDocs\\Intern-Alta\\Intern-Alta\\Data\\Users.cs",
-              "RelativeDocumentMoniker": "Intern-Alta\\Data\\Users.cs",
-              "ToolTip": "C:\\Users\\admin\\source\\repos\\FlightDocs\\Intern-Alta\\Intern-Alta\\Data\\Users.cs",
-              "RelativeToolTip": "Intern-Alta\\Data\\Users.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
+              "DocumentIndex": 1,
+              "Title": "FlightService.cs",
+              "DocumentMoniker": "C:\\Users\\admin\\source\\repos\\flightdocument\\Intern-Alta\\Intern-Alta\\Services\\Flights\\FlightService.cs",
+              "RelativeDocumentMoniker": "Intern-Alta\\Services\\Flights\\FlightService.cs",
+              "ToolTip": "C:\\Users\\admin\\source\\repos\\flightdocument\\Intern-Alta\\Intern-Alta\\Services\\Flights\\FlightService.cs",
+              "RelativeToolTip": "Intern-Alta\\Services\\Flights\\FlightService.cs",
+              "ViewState": "AgIAADIAAAAAAAAAAAAAAAYAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-15T18:09:45.019Z",
+              "WhenOpened": "2025-01-18T12:04:07.723Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "IFlightService.cs",
+              "DocumentMoniker": "C:\\Users\\admin\\source\\repos\\flightdocument\\Intern-Alta\\Intern-Alta\\Services\\Flights\\IFlightService.cs",
+              "RelativeDocumentMoniker": "Intern-Alta\\Services\\Flights\\IFlightService.cs",
+              "ToolTip": "C:\\Users\\admin\\source\\repos\\flightdocument\\Intern-Alta\\Intern-Alta\\Services\\Flights\\IFlightService.cs",
+              "RelativeToolTip": "Intern-Alta\\Services\\Flights\\IFlightService.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABEAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-18T12:04:08.881Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "DocTypeService.cs",
+              "DocumentMoniker": "C:\\Users\\admin\\source\\repos\\flightdocument\\Intern-Alta\\Intern-Alta\\Services\\DocumentType\\DocTypeService.cs",
+              "RelativeDocumentMoniker": "Intern-Alta\\Services\\DocumentType\\DocTypeService.cs",
+              "ToolTip": "C:\\Users\\admin\\source\\repos\\flightdocument\\Intern-Alta\\Intern-Alta\\Services\\DocumentType\\DocTypeService.cs",
+              "RelativeToolTip": "Intern-Alta\\Services\\DocumentType\\DocTypeService.cs",
+              "ViewState": "AgIAADUAAAAAAAAAAAAswFIAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-18T16:26:21.619Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "WeatherForecastController.cs",
+              "DocumentMoniker": "C:\\Users\\admin\\source\\repos\\flightdocument\\Intern-Alta\\Intern-Alta\\Controllers\\WeatherForecastController.cs",
+              "RelativeDocumentMoniker": "Intern-Alta\\Controllers\\WeatherForecastController.cs",
+              "ToolTip": "C:\\Users\\admin\\source\\repos\\flightdocument\\Intern-Alta\\Intern-Alta\\Controllers\\WeatherForecastController.cs",
+              "RelativeToolTip": "Intern-Alta\\Controllers\\WeatherForecastController.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-18T08:07:55.645Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 8,
-              "Title": "Roles.cs",
-              "DocumentMoniker": "C:\\Users\\admin\\source\\repos\\FlightDocs\\Intern-Alta\\Intern-Alta\\Data\\Roles.cs",
-              "RelativeDocumentMoniker": "Intern-Alta\\Data\\Roles.cs",
-              "ToolTip": "C:\\Users\\admin\\source\\repos\\FlightDocs\\Intern-Alta\\Intern-Alta\\Data\\Roles.cs",
-              "RelativeToolTip": "Intern-Alta\\Data\\Roles.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAABAAAAAAAAAA==",
+              "Title": "DocTypeModel.cs",
+              "DocumentMoniker": "C:\\Users\\admin\\source\\repos\\flightdocument\\Intern-Alta\\Intern-Alta\\Models\\DocTypeModel.cs",
+              "RelativeDocumentMoniker": "Intern-Alta\\Models\\DocTypeModel.cs",
+              "ToolTip": "C:\\Users\\admin\\source\\repos\\flightdocument\\Intern-Alta\\Intern-Alta\\Models\\DocTypeModel.cs",
+              "RelativeToolTip": "Intern-Alta\\Models\\DocTypeModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-15T18:09:19.043Z",
+              "WhenOpened": "2025-01-19T18:21:18.308Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
+              "Title": "DocModel.cs",
+              "DocumentMoniker": "C:\\Users\\admin\\source\\repos\\flightdocument\\Intern-Alta\\Intern-Alta\\Models\\DocModel.cs",
+              "RelativeDocumentMoniker": "Intern-Alta\\Models\\DocModel.cs",
+              "ToolTip": "C:\\Users\\admin\\source\\repos\\flightdocument\\Intern-Alta\\Intern-Alta\\Models\\DocModel.cs",
+              "RelativeToolTip": "Intern-Alta\\Models\\DocModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-19T18:21:38.615Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "FlightController.cs",
+              "DocumentMoniker": "C:\\Users\\admin\\source\\repos\\flightdocument\\Intern-Alta\\Intern-Alta\\Controllers\\FlightController.cs",
+              "RelativeDocumentMoniker": "Intern-Alta\\Controllers\\FlightController.cs",
+              "ToolTip": "C:\\Users\\admin\\source\\repos\\flightdocument\\Intern-Alta\\Intern-Alta\\Controllers\\FlightController.cs",
+              "RelativeToolTip": "Intern-Alta\\Controllers\\FlightController.cs",
+              "ViewState": "AgIAAD0AAAAAAAAAAAAmwGYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-18T08:04:23.674Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "IDocTypeService.cs",
+              "DocumentMoniker": "C:\\Users\\admin\\source\\repos\\flightdocument\\Intern-Alta\\Intern-Alta\\Services\\DocumentType\\IDocTypeService.cs",
+              "RelativeDocumentMoniker": "Intern-Alta\\Services\\DocumentType\\IDocTypeService.cs",
+              "ToolTip": "C:\\Users\\admin\\source\\repos\\flightdocument\\Intern-Alta\\Intern-Alta\\Services\\DocumentType\\IDocTypeService.cs",
+              "RelativeToolTip": "Intern-Alta\\Services\\DocumentType\\IDocTypeService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-18T16:26:05.979Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
               "Title": "DocumentType.cs",
-              "DocumentMoniker": "C:\\Users\\admin\\source\\repos\\FlightDocs\\Intern-Alta\\Intern-Alta\\Data\\DocumentType.cs",
+              "DocumentMoniker": "C:\\Users\\admin\\source\\repos\\flightdocument\\Intern-Alta\\Intern-Alta\\Data\\DocumentType.cs",
               "RelativeDocumentMoniker": "Intern-Alta\\Data\\DocumentType.cs",
-              "ToolTip": "C:\\Users\\admin\\source\\repos\\FlightDocs\\Intern-Alta\\Intern-Alta\\Data\\DocumentType.cs",
+              "ToolTip": "C:\\Users\\admin\\source\\repos\\flightdocument\\Intern-Alta\\Intern-Alta\\Data\\DocumentType.cs",
               "RelativeToolTip": "Intern-Alta\\Data\\DocumentType.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAANAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-01-15T18:02:42.828Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "MyDbContext.cs",
-              "DocumentMoniker": "C:\\Users\\admin\\source\\repos\\FlightDocs\\Intern-Alta\\Intern-Alta\\Data\\MyDbContext.cs",
-              "RelativeDocumentMoniker": "Intern-Alta\\Data\\MyDbContext.cs",
-              "ToolTip": "C:\\Users\\admin\\source\\repos\\FlightDocs\\Intern-Alta\\Intern-Alta\\Data\\MyDbContext.cs",
-              "RelativeToolTip": "Intern-Alta\\Data\\MyDbContext.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAA6AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-15T17:44:58.639Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "20250115180358_AddDocumentsAndDocumentTypes.cs",
-              "DocumentMoniker": "C:\\Users\\admin\\source\\repos\\FlightDocs\\Intern-Alta\\Intern-Alta\\Migrations\\20250115180358_AddDocumentsAndDocumentTypes.cs",
-              "RelativeDocumentMoniker": "Intern-Alta\\Migrations\\20250115180358_AddDocumentsAndDocumentTypes.cs",
-              "ToolTip": "C:\\Users\\admin\\source\\repos\\FlightDocs\\Intern-Alta\\Intern-Alta\\Migrations\\20250115180358_AddDocumentsAndDocumentTypes.cs",
-              "RelativeToolTip": "Intern-Alta\\Migrations\\20250115180358_AddDocumentsAndDocumentTypes.cs",
-              "ViewState": "AgIAAAgAAAAAAAAAAAAAwAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-15T18:03:58.143Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 14,
               "Title": "Documents.cs",
-              "DocumentMoniker": "C:\\Users\\admin\\source\\repos\\FlightDocs\\Intern-Alta\\Intern-Alta\\Data\\Documents.cs",
+              "DocumentMoniker": "C:\\Users\\admin\\source\\repos\\flightdocument\\Intern-Alta\\Intern-Alta\\Data\\Documents.cs",
               "RelativeDocumentMoniker": "Intern-Alta\\Data\\Documents.cs",
-              "ToolTip": "C:\\Users\\admin\\source\\repos\\FlightDocs\\Intern-Alta\\Intern-Alta\\Data\\Documents.cs",
+              "ToolTip": "C:\\Users\\admin\\source\\repos\\flightdocument\\Intern-Alta\\Intern-Alta\\Data\\Documents.cs",
               "RelativeToolTip": "Intern-Alta\\Data\\Documents.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAsAAAAZAAAAAAAAAA==",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAuwA8AAAAUAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-01-15T17:58:52.615Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "20250115174710_Dbinit.cs",
-              "DocumentMoniker": "C:\\Users\\admin\\source\\repos\\FlightDocs\\Intern-Alta\\Intern-Alta\\Migrations\\20250115174710_Dbinit.cs",
-              "RelativeDocumentMoniker": "Intern-Alta\\Migrations\\20250115174710_Dbinit.cs",
-              "ToolTip": "C:\\Users\\admin\\source\\repos\\FlightDocs\\Intern-Alta\\Intern-Alta\\Migrations\\20250115174710_Dbinit.cs",
-              "RelativeToolTip": "Intern-Alta\\Migrations\\20250115174710_Dbinit.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-15T17:47:11.231Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "Flights.cs",
-              "DocumentMoniker": "C:\\Users\\admin\\source\\repos\\FlightDocs\\Intern-Alta\\Intern-Alta\\Data\\Flights.cs",
-              "RelativeDocumentMoniker": "Intern-Alta\\Data\\Flights.cs",
-              "ToolTip": "C:\\Users\\admin\\source\\repos\\FlightDocs\\Intern-Alta\\Intern-Alta\\Data\\Flights.cs",
-              "RelativeToolTip": "Intern-Alta\\Data\\Flights.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAABEAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-15T17:45:06.403Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 15,
               "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\admin\\source\\repos\\FlightDocs\\Intern-Alta\\Intern-Alta\\Program.cs",
+              "DocumentMoniker": "C:\\Users\\admin\\source\\repos\\flightdocument\\Intern-Alta\\Intern-Alta\\Program.cs",
               "RelativeDocumentMoniker": "Intern-Alta\\Program.cs",
-              "ToolTip": "C:\\Users\\admin\\source\\repos\\FlightDocs\\Intern-Alta\\Intern-Alta\\Program.cs",
+              "ToolTip": "C:\\Users\\admin\\source\\repos\\flightdocument\\Intern-Alta\\Intern-Alta\\Program.cs",
               "RelativeToolTip": "Intern-Alta\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAARAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAbAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-01-15T17:45:26.363Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 16,
+              "Title": "Flights.cs",
+              "DocumentMoniker": "C:\\Users\\admin\\source\\repos\\flightdocument\\Intern-Alta\\Intern-Alta\\Data\\Flights.cs",
+              "RelativeDocumentMoniker": "Intern-Alta\\Data\\Flights.cs",
+              "ToolTip": "C:\\Users\\admin\\source\\repos\\flightdocument\\Intern-Alta\\Intern-Alta\\Data\\Flights.cs",
+              "RelativeToolTip": "Intern-Alta\\Data\\Flights.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-15T17:45:06.403Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
               "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\admin\\source\\repos\\FlightDocs\\Intern-Alta\\Intern-Alta\\appsettings.json",
+              "DocumentMoniker": "C:\\Users\\admin\\source\\repos\\flightdocument\\Intern-Alta\\Intern-Alta\\appsettings.json",
               "RelativeDocumentMoniker": "Intern-Alta\\appsettings.json",
-              "ToolTip": "C:\\Users\\admin\\source\\repos\\FlightDocs\\Intern-Alta\\Intern-Alta\\appsettings.json",
+              "ToolTip": "C:\\Users\\admin\\source\\repos\\flightdocument\\Intern-Alta\\Intern-Alta\\appsettings.json",
               "RelativeToolTip": "Intern-Alta\\appsettings.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-01-15T17:45:30.44Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-15T17:45:30.44Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "Users.cs",
+              "DocumentMoniker": "C:\\Users\\admin\\source\\repos\\flightdocument\\Intern-Alta\\Intern-Alta\\Data\\Users.cs",
+              "RelativeDocumentMoniker": "Intern-Alta\\Data\\Users.cs",
+              "ToolTip": "C:\\Users\\admin\\source\\repos\\flightdocument\\Intern-Alta\\Intern-Alta\\Data\\Users.cs",
+              "RelativeToolTip": "Intern-Alta\\Data\\Users.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAAwA8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-15T18:09:45.019Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "Roles.cs",
+              "DocumentMoniker": "C:\\Users\\admin\\source\\repos\\flightdocument\\Intern-Alta\\Intern-Alta\\Data\\Roles.cs",
+              "RelativeDocumentMoniker": "Intern-Alta\\Data\\Roles.cs",
+              "ToolTip": "C:\\Users\\admin\\source\\repos\\flightdocument\\Intern-Alta\\Intern-Alta\\Data\\Roles.cs",
+              "RelativeToolTip": "Intern-Alta\\Data\\Roles.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwA4AAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-15T18:09:19.043Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "20250119083256_updateDocAndDocType.cs",
+              "DocumentMoniker": "C:\\Users\\admin\\source\\repos\\flightdocument\\Intern-Alta\\Intern-Alta\\Migrations\\20250119083256_updateDocAndDocType.cs",
+              "RelativeDocumentMoniker": "Intern-Alta\\Migrations\\20250119083256_updateDocAndDocType.cs",
+              "ToolTip": "C:\\Users\\admin\\source\\repos\\flightdocument\\Intern-Alta\\Intern-Alta\\Migrations\\20250119083256_updateDocAndDocType.cs",
+              "RelativeToolTip": "Intern-Alta\\Migrations\\20250119083256_updateDocAndDocType.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-19T08:32:56.959Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "20250119090746_updateDocType.cs",
+              "DocumentMoniker": "C:\\Users\\admin\\source\\repos\\flightdocument\\Intern-Alta\\Intern-Alta\\Migrations\\20250119090746_updateDocType.cs",
+              "RelativeDocumentMoniker": "Intern-Alta\\Migrations\\20250119090746_updateDocType.cs",
+              "ToolTip": "C:\\Users\\admin\\source\\repos\\flightdocument\\Intern-Alta\\Intern-Alta\\Migrations\\20250119090746_updateDocType.cs",
+              "RelativeToolTip": "Intern-Alta\\Migrations\\20250119090746_updateDocType.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-19T09:07:47.028Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "FlightService.cs",
+              "DocumentMoniker": "C:\\Users\\admin\\source\\repos\\flightdocument\\Intern-Alta\\Intern-Alta\\Service\\FlightService.cs",
+              "RelativeDocumentMoniker": "Intern-Alta\\Service\\FlightService.cs",
+              "ToolTip": "C:\\Users\\admin\\source\\repos\\flightdocument\\Intern-Alta\\Intern-Alta\\Service\\FlightService.cs",
+              "RelativeToolTip": "Intern-Alta\\Service\\FlightService.cs",
+              "ViewState": "AgIAAB0AAAAAAAAAAAAgwC4AAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-18T11:13:11.872Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "IFlightService.cs",
+              "DocumentMoniker": "C:\\Users\\admin\\source\\repos\\flightdocument\\Intern-Alta\\Intern-Alta\\Service\\IFlightService.cs",
+              "RelativeDocumentMoniker": "Intern-Alta\\Service\\IFlightService.cs",
+              "ToolTip": "C:\\Users\\admin\\source\\repos\\flightdocument\\Intern-Alta\\Intern-Alta\\Service\\IFlightService.cs",
+              "RelativeToolTip": "Intern-Alta\\Service\\IFlightService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAA3AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-18T11:12:34.808Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "Permission.cs",
+              "DocumentMoniker": "C:\\Users\\admin\\source\\repos\\flightdocument\\Intern-Alta\\Intern-Alta\\Data\\Permission.cs",
+              "RelativeDocumentMoniker": "Intern-Alta\\Data\\Permission.cs",
+              "ToolTip": "C:\\Users\\admin\\source\\repos\\flightdocument\\Intern-Alta\\Intern-Alta\\Data\\Permission.cs",
+              "RelativeToolTip": "Intern-Alta\\Data\\Permission.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-15T18:12:36.699Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "MyDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\admin\\source\\repos\\flightdocument\\Intern-Alta\\Intern-Alta\\Data\\MyDbContext.cs",
+              "RelativeDocumentMoniker": "Intern-Alta\\Data\\MyDbContext.cs",
+              "ToolTip": "C:\\Users\\admin\\source\\repos\\flightdocument\\Intern-Alta\\Intern-Alta\\Data\\MyDbContext.cs",
+              "RelativeToolTip": "Intern-Alta\\Data\\MyDbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-15T17:44:58.639Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "20250115181336_CreatePermissionsSettingsAndConfigurationTables.cs",
+              "DocumentMoniker": "C:\\Users\\admin\\source\\repos\\flightdocument\\Intern-Alta\\Intern-Alta\\Migrations\\20250115181336_CreatePermissionsSettingsAndConfigurationTables.cs",
+              "RelativeDocumentMoniker": "Intern-Alta\\Migrations\\20250115181336_CreatePermissionsSettingsAndConfigurationTables.cs",
+              "ToolTip": "C:\\Users\\admin\\source\\repos\\flightdocument\\Intern-Alta\\Intern-Alta\\Migrations\\20250115181336_CreatePermissionsSettingsAndConfigurationTables.cs",
+              "RelativeToolTip": "Intern-Alta\\Migrations\\20250115181336_CreatePermissionsSettingsAndConfigurationTables.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-15T18:13:36.199Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "20250115181058_CreateUsersAndRolesTables.cs",
+              "DocumentMoniker": "C:\\Users\\admin\\source\\repos\\flightdocument\\Intern-Alta\\Intern-Alta\\Migrations\\20250115181058_CreateUsersAndRolesTables.cs",
+              "RelativeDocumentMoniker": "Intern-Alta\\Migrations\\20250115181058_CreateUsersAndRolesTables.cs",
+              "ToolTip": "C:\\Users\\admin\\source\\repos\\flightdocument\\Intern-Alta\\Intern-Alta\\Migrations\\20250115181058_CreateUsersAndRolesTables.cs",
+              "RelativeToolTip": "Intern-Alta\\Migrations\\20250115181058_CreateUsersAndRolesTables.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-15T18:10:59.108Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "20250115180358_AddDocumentsAndDocumentTypes.cs",
+              "DocumentMoniker": "C:\\Users\\admin\\source\\repos\\flightdocument\\Intern-Alta\\Intern-Alta\\Migrations\\20250115180358_AddDocumentsAndDocumentTypes.cs",
+              "RelativeDocumentMoniker": "Intern-Alta\\Migrations\\20250115180358_AddDocumentsAndDocumentTypes.cs",
+              "ToolTip": "C:\\Users\\admin\\source\\repos\\flightdocument\\Intern-Alta\\Intern-Alta\\Migrations\\20250115180358_AddDocumentsAndDocumentTypes.cs",
+              "RelativeToolTip": "Intern-Alta\\Migrations\\20250115180358_AddDocumentsAndDocumentTypes.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAAwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-15T18:03:58.143Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "20250115174710_Dbinit.cs",
+              "DocumentMoniker": "C:\\Users\\admin\\source\\repos\\flightdocument\\Intern-Alta\\Intern-Alta\\Migrations\\20250115174710_Dbinit.cs",
+              "RelativeDocumentMoniker": "Intern-Alta\\Migrations\\20250115174710_Dbinit.cs",
+              "ToolTip": "C:\\Users\\admin\\source\\repos\\flightdocument\\Intern-Alta\\Intern-Alta\\Migrations\\20250115174710_Dbinit.cs",
+              "RelativeToolTip": "Intern-Alta\\Migrations\\20250115174710_Dbinit.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-15T17:47:11.231Z"
             }
           ]
         }

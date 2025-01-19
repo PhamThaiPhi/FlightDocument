@@ -216,7 +216,7 @@ namespace Intern_Alta.Migrations
             modelBuilder.Entity("Intern_Alta.Data.Document", b =>
                 {
                     b.HasOne("Intern_Alta.Data.DocumentType", "DocumentType")
-                        .WithMany()
+                        .WithMany("Documents")
                         .HasForeignKey("DocumentTypeID")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
@@ -244,6 +244,11 @@ namespace Intern_Alta.Migrations
                         .IsRequired();
 
                     b.Navigation("Role");
+                });
+
+            modelBuilder.Entity("Intern_Alta.Data.DocumentType", b =>
+                {
+                    b.Navigation("Documents");
                 });
 #pragma warning restore 612, 618
         }
