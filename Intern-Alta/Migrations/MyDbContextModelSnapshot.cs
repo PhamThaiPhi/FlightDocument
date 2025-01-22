@@ -22,7 +22,7 @@ namespace Intern_Alta.Migrations
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder, 1L, 1);
 
-            modelBuilder.Entity("Intern_Alta.Data.Configuration", b =>
+            modelBuilder.Entity("Intern_Alta.Data.ConfigDB", b =>
                 {
                     b.Property<int>("ConfigID")
                         .ValueGeneratedOnAdd()
@@ -39,10 +39,17 @@ namespace Intern_Alta.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<DateTime>("CreatedAt")
-                        .HasColumnType("datetime2");
+                    b.Property<int>("DocumentTypeID")
+                        .HasColumnType("int");
+
+                    b.Property<int>("PermissionID")
+                        .HasColumnType("int");
 
                     b.HasKey("ConfigID");
+
+                    b.HasIndex("DocumentTypeID");
+
+                    b.HasIndex("PermissionID");
 
                     b.ToTable("Configuration");
                 });
@@ -63,7 +70,7 @@ namespace Intern_Alta.Migrations
                         .HasMaxLength(255)
                         .HasColumnType("nvarchar(255)");
 
-                    b.Property<DateTime>("UploadedAt")
+                    b.Property<DateTime?>("UploadedAt")
                         .HasColumnType("datetime2");
 
                     b.Property<int?>("UserID")
@@ -84,9 +91,6 @@ namespace Intern_Alta.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("DocumentTypeID"), 1L, 1);
 
-                    b.Property<DateTime>("CreatedAt")
-                        .HasColumnType("datetime2");
-
                     b.Property<string>("TypeName")
                         .IsRequired()
                         .HasMaxLength(100)
@@ -105,7 +109,7 @@ namespace Intern_Alta.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("FlightsID"), 1L, 1);
 
-                    b.Property<DateTime>("Departure")
+                    b.Property<DateTime?>("Departure")
                         .HasColumnType("datetime2");
 
                     b.Property<int>("DocumentID")
@@ -163,9 +167,6 @@ namespace Intern_Alta.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("RoleID"), 1L, 1);
 
-                    b.Property<DateTime>("CreatedAt")
-                        .HasColumnType("datetime2");
-
                     b.Property<string>("RoleName")
                         .IsRequired()
                         .HasMaxLength(100)
@@ -213,6 +214,25 @@ namespace Intern_Alta.Migrations
                     b.ToTable("Users");
                 });
 
+            modelBuilder.Entity("Intern_Alta.Data.ConfigDB", b =>
+                {
+                    b.HasOne("Intern_Alta.Data.DocumentType", "DocumentType")
+                        .WithMany()
+                        .HasForeignKey("DocumentTypeID")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("Intern_Alta.Data.Permission", "Permission")
+                        .WithMany("Configurations")
+                        .HasForeignKey("PermissionID")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("DocumentType");
+
+                    b.Navigation("Permission");
+                });
+
             modelBuilder.Entity("Intern_Alta.Data.Document", b =>
                 {
                     b.HasOne("Intern_Alta.Data.DocumentType", "DocumentType")
@@ -249,6 +269,11 @@ namespace Intern_Alta.Migrations
             modelBuilder.Entity("Intern_Alta.Data.DocumentType", b =>
                 {
                     b.Navigation("Documents");
+                });
+
+            modelBuilder.Entity("Intern_Alta.Data.Permission", b =>
+                {
+                    b.Navigation("Configurations");
                 });
 #pragma warning restore 612, 618
         }

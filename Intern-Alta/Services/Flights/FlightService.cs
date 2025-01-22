@@ -1,4 +1,5 @@
 ﻿using Intern_Alta.Data;
+using Intern_Alta.Models;
 
 namespace Intern_Alta.Services.Flights
 {
@@ -21,16 +22,34 @@ namespace Intern_Alta.Services.Flights
             return _context.Flights.SingleOrDefault(f => f.FlightsID == id);
         }
 
-        public Flight CreateFlight(Flight flight)
+        public Flight CreateFlight(FlightModel model)
         {
-            if (flight == null)
+            if (model == null)
             {
-                throw new ArgumentNullException(nameof(flight), "Flight data is invalid.");
+                throw new ArgumentNullException(nameof(model), "Model cannot be null.");
             }
 
-            _context.Flights.Add(flight);
-            _context.SaveChanges();
-            return flight;
+            try
+            {
+                var newDocumentType = new Flight
+                {
+                    FlightsNumber = model.FlightsNumber,
+                    Departure = model.Departure,
+                    Route = model.Route,
+                    PointOfLoading = model.PointOfLoading,
+                    PointOfUnloading = model.PointOfUnloading,
+                };
+
+                _context.Flights.Add(newDocumentType);
+                _context.SaveChanges();
+
+                return newDocumentType;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Error creating DocumentType: {ex.Message}");
+                throw new Exception("An error occurred while creating the DocumentType.", ex);
+            }
         }
         public Flight UpdateFlight(int id, Flight flight)
         {

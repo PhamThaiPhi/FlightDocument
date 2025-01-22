@@ -9,19 +9,20 @@ namespace Intern_Alta.Data
     public class Document
     {
         [Key]
-        public int DocumentID { get; set; } // Khóa chính cho tài liệu
+        public int DocumentID { get; set; } 
 
         [Required]
         [StringLength(255)]
-        public string   Title { get; set; } // Tiêu đề tài liệu
+        public string   Title { get; set; } 
 
-        public DateTime UploadedAt { get; set; } = DateTime.Now; // Ngày tải lên
+        public DateTime? UploadedAt { get; set; } = DateTime.Now;
+        public int? UserID { get; set; } 
 
-        public int? UserID { get; set; } // Khóa ngoại đến bảng Users (có thể null)
-
-        public int DocumentTypeID { get; set; } // Thuộc tính lưu khóa ngoại 
+        public int DocumentTypeID { get; set; }
+        
 
         [ForeignKey("DocumentTypeID")]
-        public DocumentType DocumentType { get; set; } // Khóa ngoại liên kết đến bảng DocumentTypes
+        public DocumentType DocumentType { get; set; }
+       
     }
 }

@@ -8,10 +8,10 @@ namespace Intern_Alta.Data
         public MyDbContext(DbContextOptions<MyDbContext> options) : base(options) { }
         public DbSet<User> Users { get; set; }
         public DbSet<Role> Roles { get; set; }
-        public DbSet<Flight> Flights { get; set; } // DbSet cho bảng Flights
-        public DbSet<Document> Documents { get; set; } // DbSet cho bảng Documents
-        public DbSet<DocumentType> DocumentTypes { get; set; } // DbSet cho bảng DocumentTypes
+        public DbSet<Flight> Flights { get; set; } 
+        public DbSet<Document> Documents { get; set; } 
+        public DbSet<DocumentType> DocumentTypes { get; set; } 
         public DbSet<Permission> Permissions { get; set; }
-        public DbSet<Configuration> Configurations { get; set; }
+        public DbSet<ConfigDB> Configurations { get; set; }
     }
 }

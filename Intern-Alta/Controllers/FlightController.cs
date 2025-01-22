@@ -1,4 +1,5 @@
 ﻿using Intern_Alta.Data;
+using Intern_Alta.Models;
 using Intern_Alta.Services.Flights;
 using Microsoft.AspNetCore.Mvc;
 
@@ -38,7 +39,7 @@ namespace Intern_Alta.Controllers
 
         // Tạo chuyến bay mới
         [HttpPost]
-        public IActionResult Create([FromBody] Flight flight)
+        public IActionResult Create([FromBody] FlightModel flight)
         {
             if (flight == null)
             {

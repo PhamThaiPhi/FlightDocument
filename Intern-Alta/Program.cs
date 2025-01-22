@@ -1,6 +1,7 @@
 using Intern_Alta;
 using Intern_Alta.Data;
 using Intern_Alta.Services;
+using Intern_Alta.Services.Configuration;
 using Intern_Alta.Services.Documents;
 using Intern_Alta.Services.DocumentTypes;
 using Intern_Alta.Services.Flights;
@@ -19,7 +20,7 @@ builder.Services.AddSwaggerGen();
 builder.Services.AddScoped<IFlightService, FlightService>();
 builder.Services.AddScoped<IDocTypeService, DocTypeService>();
 builder.Services.AddScoped<IDocumentService, DocumentService>();
-
+builder.Services.AddScoped<IConfigService, ConfigService>();
 
 var app = builder.Build();
 

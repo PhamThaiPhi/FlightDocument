@@ -1,5 +1,5 @@
 ﻿using Intern_Alta.Data;
-
+using Intern_Alta.Models;
 namespace Intern_Alta.Services.Flights
 {
     public interface IFlightService
@@ -11,7 +11,7 @@ namespace Intern_Alta.Services.Flights
         Flight GetFlightById(int id);
 
         // Tạo mới một chuyến bay
-        Flight CreateFlight(Flight flight);
+        Flight CreateFlight(FlightModel model);
         Flight UpdateFlight(int id, Flight flight);
 
         // Xóa chuyến bay theo ID

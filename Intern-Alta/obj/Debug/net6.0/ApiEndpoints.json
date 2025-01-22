@@ -1,5 +1,84 @@
 [
   {
+    "ContainingType": "Intern_Alta.Controllers.ConfigController",
+    "Method": "GetAllConfigurations",
+    "RelativePath": "api/Config",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Intern_Alta.Controllers.ConfigController",
+    "Method": "CreateConfiguration",
+    "RelativePath": "api/Config",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "model",
+        "Type": "Intern_Alta.Models.ConfigModel",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Intern_Alta.Controllers.ConfigController",
+    "Method": "GetConfigurationById",
+    "RelativePath": "api/Config/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Intern_Alta.Controllers.ConfigController",
+    "Method": "UpdateConfiguration",
+    "RelativePath": "api/Config/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "configuration",
+        "Type": "Intern_Alta.Models.ConfigModel",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Intern_Alta.Controllers.ConfigController",
+    "Method": "DeleteConfiguration",
+    "RelativePath": "api/Config/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "Intern_Alta.Controllers.DocumentsController",
     "Method": "GetAllDocuments",
     "RelativePath": "api/Documents",
@@ -21,29 +100,19 @@
   },
   {
     "ContainingType": "Intern_Alta.Controllers.DocumentsController",
-    "Method": "CreateDocument",
+    "Method": "Create",
     "RelativePath": "api/Documents",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
-        "Name": "document",
-        "Type": "Intern_Alta.Data.Document",
+        "Name": "model",
+        "Type": "Intern_Alta.Models.DocModel",
         "IsRequired": true
       }
     ],
-    "ReturnTypes": [
-      {
-        "Type": "Intern_Alta.Data.Document",
-        "MediaTypes": [
-          "text/plain",
-          "application/json",
-          "text/json"
-        ],
-        "StatusCode": 200
-      }
-    ]
+    "ReturnTypes": []
   },
   {
     "ContainingType": "Intern_Alta.Controllers.DocumentsController",
@@ -86,7 +155,7 @@
       },
       {
         "Name": "document",
-        "Type": "Intern_Alta.Data.Document",
+        "Type": "Intern_Alta.Models.DocModel",
         "IsRequired": true
       }
     ],
@@ -137,8 +206,8 @@
     "Order": 0,
     "Parameters": [
       {
-        "Name": "documentType",
-        "Type": "Intern_Alta.Data.DocumentType",
+        "Name": "model",
+        "Type": "Intern_Alta.Models.DocTypeModel",
         "IsRequired": true
       }
     ],
@@ -175,7 +244,7 @@
       },
       {
         "Name": "documentType",
-        "Type": "Intern_Alta.Data.DocumentType",
+        "Type": "Intern_Alta.Models.DocTypeModel",
         "IsRequired": true
       }
     ],
@@ -217,7 +286,7 @@
     "Parameters": [
       {
         "Name": "flight",
-        "Type": "Intern_Alta.Data.Flight",
+        "Type": "Intern_Alta.Models.FlightModel",
         "IsRequired": true
       }
     ],

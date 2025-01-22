@@ -8,12 +8,11 @@ namespace Intern_Alta.Data
     public class Role
     {
         [Key]
-        public int RoleID { get; set; } // Khóa chính cho vai trò
+        public int RoleID { get; set; } 
 
         [Required]
         [StringLength(100)]
-        public string RoleName { get; set; } // Tên vai trò
-
-        public DateTime CreatedAt { get; set; } = DateTime.Now; // Ngày tạo
+        public string RoleName { get; set; } 
+        
     }
 }

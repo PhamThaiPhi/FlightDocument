@@ -1,4 +1,5 @@
 ﻿using Intern_Alta.Data;
+using Intern_Alta.Models;
 
 namespace Intern_Alta.Services.Documents
 {
@@ -11,10 +12,10 @@ namespace Intern_Alta.Services.Documents
         Document GetDocumentById(int id);
 
         // Tạo mới một tài liệu
-        Document CreateDocument(Document document);
+        Document CreateDocument(DocModel model);
 
         // Cập nhật tài liệu theo ID
-        Document UpdateDocument(int id, Document document);
+        Document UpdateDocument(int id, DocModel document);
 
         // Xóa tài liệu theo ID
         bool DeleteDocument(int id);

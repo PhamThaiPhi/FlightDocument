@@ -8,15 +8,17 @@ namespace Intern_Alta.Data
     public class Permission
     {
         [Key]
-        public int PermissionID { get; set; } // Khóa chính cho quyền
+        public int PermissionID { get; set; } 
 
         [Required]
         [StringLength(100)]
-        public string PermissionName { get; set; } // Tên quyền
+        public string PermissionName { get; set; } 
 
-        public int? RoleID { get; set; } // Khóa ngoại đến bảng Roles (có thể null)
+        public int? RoleID { get; set; } 
 
         [ForeignKey("RoleID")]
-        public virtual Role Role { get; set; } // Tham chiếu đến bảng Roles
+        public virtual Role Role { get; set; } 
+
+        public virtual ICollection<ConfigDB>? Configurations { get; set; }
     }
 }

@@ -9,15 +9,12 @@ namespace Intern_Alta.Data
     public class DocumentType
     {
         [Key]
-        public int DocumentTypeID { get; set; } // Khóa chính cho loại tài liệu
+        public int DocumentTypeID { get; set; } 
 
         [Required]
         [StringLength(100)]
-        public string TypeName { get; set; } // Tên loại tài liệu
-
+        public string TypeName { get; set; } 
         
-
         public virtual ICollection<Document>? Documents { get; set; }
-
     }
 }

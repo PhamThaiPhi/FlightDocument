@@ -1,9 +1,8 @@
 ﻿using Intern_Alta.Data;
+using Intern_Alta.Models;
+using Intern_Alta.Services.DocumentTypes;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.EntityFrameworkCore;
 using System;
-using System.Collections.Generic;
-using System.Threading.Tasks;
 
 namespace Intern_Alta.Controllers
 {
@@ -11,83 +10,94 @@ namespace Intern_Alta.Controllers
     [ApiController]
     public class DocumentTypeController : ControllerBase
     {
-        private readonly MyDbContext _context;
+        private readonly IDocTypeService _docTypeService;
 
-
-        public DocumentTypeController(MyDbContext context)
+        // Inject IDocTypeService qua constructor
+        public DocumentTypeController(IDocTypeService docTypeService)
         {
-            _context = context ?? throw new ArgumentNullException(nameof(context));
+            _docTypeService = docTypeService ?? throw new ArgumentNullException(nameof(docTypeService));
         }
 
         [HttpGet]
-        public async Task<IActionResult> GetAll()
+        public IActionResult GetAll()
         {
-            var documentTypes = await _context.DocumentTypes.ToListAsync();
-            return Ok(documentTypes);
+            try
+            {
+                var documentTypes = _docTypeService.GetAllDocumentTypes();
+                return Ok(documentTypes);
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, new { Message = $"Internal server error: {ex.Message}" });
+            }
         }
 
-        
         [HttpGet("{id}")]
-        public async Task<IActionResult> GetById(int id)
+        public IActionResult GetById(int id)
         {
-            var documentType = await _context.DocumentTypes.FindAsync(id);
-            if (documentType == null)
+            try
             {
-                return NotFound(new { Message = $"DocumentType with ID {id} not found." });
+                var documentType = _docTypeService.GetDocumentTypeById(id);
+                return Ok(documentType);
             }
-
-            return Ok(documentType);
+            catch (KeyNotFoundException ex)
+            {
+                return NotFound(new { Message = ex.Message });
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, new { Message = $"Internal server error: {ex.Message}" });
+            }
         }
 
         [HttpPost]
-        public async Task<IActionResult> Create([FromBody] DocumentType documentType)
+        public IActionResult Create(DocTypeModel model)
         {
-            if (documentType == null || string.IsNullOrWhiteSpace(documentType.TypeName))
+            if (model == null)
             {
-                return BadRequest(new { Message = "Invalid document type data." });
+                return BadRequest(new { Message = "Model cannot be null." });
             }
 
-            _context.DocumentTypes.Add(documentType);
-            await _context.SaveChangesAsync();
-
-            return CreatedAtAction(nameof(GetById), new { id = documentType.DocumentTypeID }, documentType);
+            try
+            {
+                var newDocumentType = _docTypeService.CreateDocumentType(model);
+                return Ok(newDocumentType);
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, new { Message = $"Internal server error: {ex.Message}" });
+            }
         }
 
-        
         [HttpPut("{id}")]
-        public async Task<IActionResult> Update(int id, [FromBody] DocumentType documentType)
-        {
-            if (documentType == null || id != documentType.DocumentTypeID)
-            {
-                return BadRequest(new { Message = "Invalid document type data." });
-            }
+        public IActionResult Update(int id, [FromBody] DocTypeModel documentType)
+        {      
+                var updatedDocumentType = _docTypeService.UpdateDocumentType(id, documentType);
+                return Ok(updatedDocumentType);
 
-            var existingType = await _context.DocumentTypes.FindAsync(id);
-            if (existingType == null)
-            {
-                return NotFound(new { Message = $"DocumentType with ID {id} not found." });
-            }
-
-            existingType.TypeName = documentType.TypeName;
-            await _context.SaveChangesAsync();
-
-            return Ok(existingType);
         }
 
-        
         [HttpDelete("{id}")]
-        public async Task<IActionResult> Delete(int id)
+        public IActionResult Delete(int id)
         {
-            var documentType = await _context.DocumentTypes.FindAsync(id);
-            if (documentType == null)
+            try
             {
+                var success = _docTypeService.DeleteDocumentType(id);
+                if (success)
+                {
+                    return NoContent();
+                }
+
                 return NotFound(new { Message = $"DocumentType with ID {id} not found." });
             }
-
-            _context.DocumentTypes.Remove(documentType);
-            await _context.SaveChangesAsync();
-
-            return NoContent();
+            catch (KeyNotFoundException ex)
+            {
+                return NotFound(new { Message = ex.Message });
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, new { Message = $"Internal server error: {ex.Message}" });
+            }
         }
     }
 }

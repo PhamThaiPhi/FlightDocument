@@ -5,6 +5,131 @@
     "version": "1.0"
   },
   "paths": {
+    "/api/Config": {
+      "get": {
+        "tags": [
+          "Config"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "Config"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ConfigModel"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ConfigModel"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/ConfigModel"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/Config/{id}": {
+      "get": {
+        "tags": [
+          "Config"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "Config"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ConfigModel"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ConfigModel"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/ConfigModel"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "Config"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
     "/api/Documents": {
       "get": {
         "tags": [
@@ -50,41 +175,24 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/Document"
+                "$ref": "#/components/schemas/DocModel"
               }
             },
             "text/json": {
               "schema": {
-                "$ref": "#/components/schemas/Document"
+                "$ref": "#/components/schemas/DocModel"
               }
             },
             "application/*+json": {
               "schema": {
-                "$ref": "#/components/schemas/Document"
+                "$ref": "#/components/schemas/DocModel"
               }
             }
           }
         },
         "responses": {
           "200": {
-            "description": "Success",
-            "content": {
-              "text/plain": {
-                "schema": {
-                  "$ref": "#/components/schemas/Document"
-                }
-              },
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Document"
-                }
-              },
-              "text/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Document"
-                }
-              }
-            }
+            "description": "Success"
           }
         }
       }
@@ -147,17 +255,17 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/Document"
+                "$ref": "#/components/schemas/DocModel"
               }
             },
             "text/json": {
               "schema": {
-                "$ref": "#/components/schemas/Document"
+                "$ref": "#/components/schemas/DocModel"
               }
             },
             "application/*+json": {
               "schema": {
-                "$ref": "#/components/schemas/Document"
+                "$ref": "#/components/schemas/DocModel"
               }
             }
           }
@@ -226,17 +334,17 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/DocumentType"
+                "$ref": "#/components/schemas/DocTypeModel"
               }
             },
             "text/json": {
               "schema": {
-                "$ref": "#/components/schemas/DocumentType"
+                "$ref": "#/components/schemas/DocTypeModel"
               }
             },
             "application/*+json": {
               "schema": {
-                "$ref": "#/components/schemas/DocumentType"
+                "$ref": "#/components/schemas/DocTypeModel"
               }
             }
           }
@@ -289,17 +397,17 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/DocumentType"
+                "$ref": "#/components/schemas/DocTypeModel"
               }
             },
             "text/json": {
               "schema": {
-                "$ref": "#/components/schemas/DocumentType"
+                "$ref": "#/components/schemas/DocTypeModel"
               }
             },
             "application/*+json": {
               "schema": {
-                "$ref": "#/components/schemas/DocumentType"
+                "$ref": "#/components/schemas/DocTypeModel"
               }
             }
           }
@@ -351,17 +459,17 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/Flight"
+                "$ref": "#/components/schemas/FlightModel"
               }
             },
             "text/json": {
               "schema": {
-                "$ref": "#/components/schemas/Flight"
+                "$ref": "#/components/schemas/FlightModel"
               }
             },
             "application/*+json": {
               "schema": {
-                "$ref": "#/components/schemas/Flight"
+                "$ref": "#/components/schemas/FlightModel"
               }
             }
           }
@@ -499,6 +607,68 @@
   },
   "components": {
     "schemas": {
+      "ConfigModel": {
+        "required": [
+          "configName"
+        ],
+        "type": "object",
+        "properties": {
+          "configName": {
+            "maxLength": 100,
+            "minLength": 0,
+            "type": "string"
+          },
+          "configValue": {
+            "type": "string",
+            "nullable": true
+          },
+          "documentTypeID": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "permissionID": {
+            "type": "integer",
+            "format": "int32"
+          }
+        },
+        "additionalProperties": false
+      },
+      "DocModel": {
+        "required": [
+          "title"
+        ],
+        "type": "object",
+        "properties": {
+          "title": {
+            "maxLength": 255,
+            "minLength": 0,
+            "type": "string"
+          },
+          "uploadedAt": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "documentTypeID": {
+            "type": "integer",
+            "format": "int32"
+          }
+        },
+        "additionalProperties": false
+      },
+      "DocTypeModel": {
+        "required": [
+          "typeName"
+        ],
+        "type": "object",
+        "properties": {
+          "typeName": {
+            "minLength": 1,
+            "type": "string"
+          }
+        },
+        "additionalProperties": false
+      },
       "Document": {
         "required": [
           "title"
@@ -516,7 +686,8 @@
           },
           "uploadedAt": {
             "type": "string",
-            "format": "date-time"
+            "format": "date-time",
+            "nullable": true
           },
           "userID": {
             "type": "integer",
@@ -575,7 +746,39 @@
           },
           "departure": {
             "type": "string",
-            "format": "date-time"
+            "format": "date-time",
+            "nullable": true
+          },
+          "documentID": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "pointOfLoading": {
+            "type": "string",
+            "nullable": true
+          },
+          "pointOfUnloading": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "FlightModel": {
+        "type": "object",
+        "properties": {
+          "flightsNumber": {
+            "type": "string",
+            "nullable": true
+          },
+          "route": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "departure": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
           },
           "documentID": {
             "type": "integer",

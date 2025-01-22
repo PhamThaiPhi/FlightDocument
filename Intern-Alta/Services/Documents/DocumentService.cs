@@ -1,4 +1,5 @@
 ﻿using Intern_Alta.Data;
+using Intern_Alta.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -48,21 +49,36 @@ namespace Intern_Alta.Services.Documents
         }
 
         // Tạo mới một tài liệu
-        public Document CreateDocument(Document document)
+        public Document CreateDocument(DocModel model)
         {
-            // Kiểm tra DocumentTypeID có tồn tại không
-            if (!_context.DocumentTypes.Any(dt => dt.DocumentTypeID == document.DocumentTypeID))
+            if (model == null)
             {
-                throw new ArgumentException("DocumentTypeID không hợp lệ.");
+                throw new ArgumentNullException(nameof(model), "Model cannot be null.");
             }
 
-            _context.Documents.Add(document); // Thêm tài liệu
-            _context.SaveChanges(); // Lưu thay đổi vào cơ sở dữ liệu
-            return document;
+            try
+            {
+                var newDocumentType = new Document
+                {
+                    Title = model.Title,
+                    UploadedAt= model.UploadedAt,
+                    DocumentTypeID= model.DocumentTypeID,   
+                };
+
+                _context.Documents.Add(newDocumentType);
+                _context.SaveChanges();
+
+                return newDocumentType;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Error creating DocumentType: {ex.Message}");
+                throw new Exception("An error occurred while creating the DocumentType.", ex);
+            }
         }
 
         // Cập nhật tài liệu theo ID
-        public Document UpdateDocument(int id, Document document)
+        public Document UpdateDocument(int id, DocModel document)
         {
             var existingDocument = _context.Documents.Find(id);
 
@@ -74,7 +90,7 @@ namespace Intern_Alta.Services.Documents
             // Cập nhật thông tin
             existingDocument.Title = document.Title;
             existingDocument.UploadedAt = document.UploadedAt;
-            existingDocument.UserID = document.UserID;
+            
 
             // Kiểm tra DocumentTypeID mới có hợp lệ không
             if (!_context.DocumentTypes.Any(dt => dt.DocumentTypeID == document.DocumentTypeID))
@@ -102,5 +118,7 @@ namespace Intern_Alta.Services.Documents
             _context.SaveChanges(); // Lưu thay đổi
             return true;
         }
+
+        
     }
 }

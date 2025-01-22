@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Mvc;
 using Intern_Alta.Data;
 using Intern_Alta.Services.Documents;
 using System.Collections.Generic;
+using Intern_Alta.Models;
 
 namespace Intern_Alta.Controllers
 {
@@ -39,26 +40,27 @@ namespace Intern_Alta.Controllers
 
         // Tạo mới tài liệu
         [HttpPost]
-        public ActionResult<Document> CreateDocument([FromBody] Document document)
+        public IActionResult Create(DocModel model)
         {
-            if (document == null)
+            if (model == null)
             {
-                return BadRequest(); // Trả về 400 nếu tài liệu không hợp lệ
+                return BadRequest(new { Message = "Model cannot be null." });
             }
 
-            var createdDocument = _documentService.CreateDocument(document);
-            return CreatedAtAction(nameof(GetDocumentById), new { id = createdDocument.DocumentID }, createdDocument);
+            try
+            {
+                var newDocumentType = _documentService.CreateDocument(model);
+                return Ok(newDocumentType);
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, new { Message = $"Internal server error: {ex.Message}" });
+            }
         }
-
         // Cập nhật tài liệu theo ID
         [HttpPut("{id}")]
-        public ActionResult<Document> UpdateDocument(int id, [FromBody] Document document)
+        public ActionResult<Document> UpdateDocument(int id, [FromBody] DocModel document)
         {
-            if (document == null || id != document.DocumentID)
-            {
-                return BadRequest(); // Trả về 400 nếu tài liệu không hợp lệ
-            }
-
             var updatedDocument = _documentService.UpdateDocument(id, document);
             return Ok(updatedDocument); // Trả về tài liệu đã cập nhật
         }

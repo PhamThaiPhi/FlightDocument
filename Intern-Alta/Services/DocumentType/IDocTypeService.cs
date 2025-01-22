@@ -1,4 +1,5 @@
 ﻿using Intern_Alta.Data;
+using Intern_Alta.Models;
 using System.Collections.Generic;
 
 namespace Intern_Alta.Services.DocumentTypes
@@ -12,12 +13,14 @@ namespace Intern_Alta.Services.DocumentTypes
         DocumentType GetDocumentTypeById(int id);
 
         // Tạo mới một DocumentType
-        DocumentType CreateDocumentType(DocumentType documentType);
+        DocumentType CreateDocumentType(DocTypeModel model);
+
 
         // Cập nhật thông tin một DocumentType
-        DocumentType UpdateDocumentType(int id, DocumentType documentType);
+        DocumentType UpdateDocumentType(int id, DocTypeModel documentType);
 
         // Xóa một DocumentType theo ID
         bool DeleteDocumentType(int id);
+        
     }
 }
