@@ -5,6 +5,8 @@ using Intern_Alta.Services.Configuration;
 using Intern_Alta.Services.Documents;
 using Intern_Alta.Services.DocumentTypes;
 using Intern_Alta.Services.Flights;
+using Intern_Alta.Services.Permissions;
+using Intern_Alta.Services.Users;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -21,7 +23,8 @@ builder.Services.AddScoped<IFlightService, FlightService>();
 builder.Services.AddScoped<IDocTypeService, DocTypeService>();
 builder.Services.AddScoped<IDocumentService, DocumentService>();
 builder.Services.AddScoped<IConfigService, ConfigService>();
-
+builder.Services.AddScoped<IPermissionService, PermissionService>();
+builder.Services.AddScoped<IUserService, UserService>();
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
