@@ -48,7 +48,7 @@ namespace Intern_Alta.Services.Users
                 Email = model.Email,
                 Password = model.Password,
                 RoleID = model.RoleID,
-                // Add other properties as needed
+               
             };
 
             _context.Users.Add(newUser);
@@ -68,7 +68,7 @@ namespace Intern_Alta.Services.Users
 
             existingUser.Username = user.Username;
             existingUser.Email = user.Email;
-            // Update other properties as needed
+           
 
             _context.SaveChanges();
 

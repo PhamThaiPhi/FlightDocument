@@ -15,19 +15,19 @@ namespace Intern_Alta.Services.Permissions
             _context = context;
         }
 
-        // Lấy tất cả quyền
+    
         public List<Permission> GetAllPermissions()
         {
             return _context.Permissions.ToList();
         }
 
-        // Lấy thông tin quyền theo ID
+
         public Permission GetPermissionById(int id)
         {
             return _context.Permissions.FirstOrDefault(p => p.PermissionID == id);
         }
 
-        // Tạo mới một quyền
+   
         public Permission CreatePermission(PerModel model)
         {
             if (model == null)
@@ -47,7 +47,7 @@ namespace Intern_Alta.Services.Permissions
             return newPermission;
         }
 
-        // Cập nhật quyền theo ID
+
         public Permission UpdatePermission(int id, PerModel permission)
         {
             var existingPermission = _context.Permissions.Find(id);
@@ -65,7 +65,7 @@ namespace Intern_Alta.Services.Permissions
             return existingPermission;
         }
 
-        // Xóa quyền theo ID
+  
         public bool DeletePermission(int id)
         {
             var permissionToDelete = _context.Permissions.Find(id);

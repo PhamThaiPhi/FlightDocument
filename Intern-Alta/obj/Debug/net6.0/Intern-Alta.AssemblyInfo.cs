@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Intern-Alta")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1cebd303b3a0351b24c294535d027498440b04c6")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+98b0c177f955a0cc832293fee1b0f18206f59fbc")]
 [assembly: System.Reflection.AssemblyProductAttribute("Intern-Alta")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Intern-Alta")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
