@@ -16,13 +16,13 @@ namespace Intern_Alta.Services
             _context = context;
         }
 
-        // Lấy danh sách tất cả DocumentType
+        
         public List<DocumentType> GetAllDocumentTypes()
         {
             return _context.DocumentTypes.ToList();
         }
 
-        // Lấy thông tin DocumentType theo ID
+     
         public DocumentType GetDocumentTypeById(int id)
         {
             var documentType = _context.DocumentTypes.FirstOrDefault(dt => dt.DocumentTypeID == id);
@@ -34,7 +34,7 @@ namespace Intern_Alta.Services
             return documentType;
         }
 
-        // Tạo mới một DocumentType
+    
         public DocumentType CreateDocumentType(DocTypeModel model)
         {
             if (model == null)
@@ -63,7 +63,7 @@ namespace Intern_Alta.Services
 
 
 
-        // Cập nhật thông tin một DocumentType
+
         public DocumentType UpdateDocumentType(int id, DocTypeModel documentType)
         {
             var existingType = _context.DocumentTypes.FirstOrDefault(dt => dt.DocumentTypeID == id);
@@ -84,7 +84,7 @@ namespace Intern_Alta.Services
             return existingType;
         }
 
-        // Xóa một DocumentType theo ID
+        
         public bool DeleteDocumentType(int id)
         {
             var documentType = _context.DocumentTypes.FirstOrDefault(dt => dt.DocumentTypeID == id);

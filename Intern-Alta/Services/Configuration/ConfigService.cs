@@ -23,17 +23,27 @@ namespace Intern_Alta.Services.Configuration
                     ConfigID = d.ConfigID,
                     ConfigName = d.ConfigName,
                     ConfigValue = d.ConfigValue,
-                    PermissionID = d.PermissionID,
+                   
                     Permission = d.Permission,
-                    DocumentTypeID = d.DocumentTypeID,
-                    DocumentType = d.DocumentType // Bao gồm cả DocumentType
+                    
+                    DocumentType = d.DocumentType 
                 })
                 .ToList();
         }
 
         public ConfigDB GetConfigurationById(int id)
         {
-            return _context.Configurations.FirstOrDefault(c => c.ConfigID == id);
+            return _context.Configurations
+                .Where(c => c.ConfigID == id)
+                .Select(d => new ConfigDB
+                {
+                    ConfigID = d.ConfigID,
+                    ConfigName = d.ConfigName,
+                    ConfigValue = d.ConfigValue,
+                    Permission = d.Permission, 
+                    DocumentType = d.DocumentType 
+                })
+                .FirstOrDefault();
         }
 
         public ConfigDB CreateConfiguration(ConfigModel model)

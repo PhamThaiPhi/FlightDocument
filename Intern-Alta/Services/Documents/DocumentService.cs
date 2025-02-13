@@ -15,7 +15,6 @@ namespace Intern_Alta.Services.Documents
             _context = context;
         }
 
-        // Lấy tất cả tài liệu
         public List<Document> GetAllDocuments()
         {
             return _context.Documents
@@ -25,13 +24,14 @@ namespace Intern_Alta.Services.Documents
                     Title = d.Title,
                     UploadedAt = d.UploadedAt,
                     UserID = d.UserID,
-                    DocumentTypeID = d.DocumentTypeID,
-                    DocumentType = d.DocumentType // Bao gồm cả DocumentType
+                 
+                    Flight = d.Flight,
+                    DocumentType = d.DocumentType 
                 })
                 .ToList();
         }
 
-        // Lấy thông tin tài liệu theo ID
+
         public Document GetDocumentById(int id)
         {
             return _context.Documents
@@ -48,7 +48,6 @@ namespace Intern_Alta.Services.Documents
                 .FirstOrDefault();
         }
 
-        // Tạo mới một tài liệu
         public Document CreateDocument(DocModel model)
         {
             if (model == null)
@@ -62,7 +61,8 @@ namespace Intern_Alta.Services.Documents
                 {
                     Title = model.Title,
                     UploadedAt= model.UploadedAt,
-                    DocumentTypeID= model.DocumentTypeID,   
+                    DocumentTypeID= model.DocumentTypeID,
+                    FlightsID= model.FlightsID,
                 };
 
                 _context.Documents.Add(newDocumentType);
@@ -77,22 +77,23 @@ namespace Intern_Alta.Services.Documents
             }
         }
 
-        // Cập nhật tài liệu theo ID
+        
         public Document UpdateDocument(int id, DocModel document)
         {
             var existingDocument = _context.Documents.Find(id);
 
             if (existingDocument == null)
             {
-                return null; // Không tìm thấy tài liệu
+                return null; 
             }
 
-            // Cập nhật thông tin
+          
             existingDocument.Title = document.Title;
             existingDocument.UploadedAt = document.UploadedAt;
-            
+            existingDocument.DocumentTypeID = document.DocumentTypeID;
+            existingDocument.FlightsID = document.FlightsID;
 
-            // Kiểm tra DocumentTypeID mới có hợp lệ không
+            
             if (!_context.DocumentTypes.Any(dt => dt.DocumentTypeID == document.DocumentTypeID))
             {
                 throw new ArgumentException("DocumentTypeID không hợp lệ.");
@@ -100,22 +101,22 @@ namespace Intern_Alta.Services.Documents
 
             existingDocument.DocumentTypeID = document.DocumentTypeID;
 
-            _context.SaveChanges(); // Lưu thay đổi
+            _context.SaveChanges(); 
             return existingDocument;
         }
 
-        // Xóa tài liệu theo ID
+       
         public bool DeleteDocument(int id)
         {
             var document = _context.Documents.Find(id);
 
             if (document == null)
             {
-                return false; // Không tìm thấy tài liệu
+                return false; 
             }
 
-            _context.Documents.Remove(document); // Xóa tài liệu
-            _context.SaveChanges(); // Lưu thay đổi
+            _context.Documents.Remove(document);
+            _context.SaveChanges(); 
             return true;
         }
 

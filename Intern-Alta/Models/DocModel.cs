@@ -8,8 +8,9 @@ namespace Intern_Alta.Models
         [StringLength(255)]
         public string Title { get; set; } 
 
-        public DateTime? UploadedAt { get; set; } = DateTime.Now; 
+        public DateTime? UploadedAt { get; set; } = DateTime.Now;
 
+        public int FlightsID { get; set; }
         public int DocumentTypeID { get; set; } 
     }
 }

@@ -11,13 +11,13 @@ namespace Intern_Alta.Controllers
     {
         private readonly IFlightService _flightService;
 
-        // Inject service thông qua Dependency Injection
+        
         public FlightController(IFlightService flightService)
         {
             _flightService = flightService ?? throw new ArgumentNullException(nameof(flightService));
         }
 
-        // Lấy tất cả các chuyến bay
+     
         [HttpGet]
         public IActionResult GetAll()
         {
@@ -25,7 +25,7 @@ namespace Intern_Alta.Controllers
             return Ok(flights);
         }
 
-        // Lấy thông tin chuyến bay theo ID
+      
         [HttpGet("{id}")]
         public IActionResult GetById(int id)
         {
@@ -37,7 +37,7 @@ namespace Intern_Alta.Controllers
             return NotFound(new { Message = $"Flight with ID {id} not found." });
         }
 
-        // Tạo chuyến bay mới
+       
         [HttpPost]
         public IActionResult Create([FromBody] FlightModel flight)
         {
@@ -57,7 +57,7 @@ namespace Intern_Alta.Controllers
             }
         }
 
-        // Cập nhật chuyến bay
+        
         [HttpPut("{id}")]
         public IActionResult Update(int id, [FromBody] Flight flight)
         {
@@ -81,7 +81,7 @@ namespace Intern_Alta.Controllers
             }
         }
 
-        // Xóa chuyến bay
+       
         [HttpDelete("{id}")]
         public IActionResult Delete(int id)
         {

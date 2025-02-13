@@ -88,7 +88,7 @@
     "Parameters": [],
     "ReturnTypes": [
       {
-        "Type": "System.Collections.Generic.List\u00601[[Intern_Alta.Data.Document, Intern-Alta, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "Type": "System.Collections.Generic.List\u00601[[Document, Intern-Alta, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -130,7 +130,7 @@
     ],
     "ReturnTypes": [
       {
-        "Type": "Intern_Alta.Data.Document",
+        "Type": "Document",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -161,7 +161,7 @@
     ],
     "ReturnTypes": [
       {
-        "Type": "Intern_Alta.Data.Document",
+        "Type": "Document",
         "MediaTypes": [
           "text/plain",
           "application/json",

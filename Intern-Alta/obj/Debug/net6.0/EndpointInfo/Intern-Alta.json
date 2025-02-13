@@ -1024,6 +1024,10 @@
             "format": "date-time",
             "nullable": true
           },
+          "flightsID": {
+            "type": "integer",
+            "format": "int32"
+          },
           "documentTypeID": {
             "type": "integer",
             "format": "int32"
@@ -1068,6 +1072,13 @@
             "type": "integer",
             "format": "int32",
             "nullable": true
+          },
+          "flightsID": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "flight": {
+            "$ref": "#/components/schemas/Flight"
           },
           "documentTypeID": {
             "type": "integer",
@@ -1124,16 +1135,19 @@
             "format": "date-time",
             "nullable": true
           },
-          "documentID": {
-            "type": "integer",
-            "format": "int32"
-          },
           "pointOfLoading": {
             "type": "string",
             "nullable": true
           },
           "pointOfUnloading": {
             "type": "string",
+            "nullable": true
+          },
+          "documents": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Document"
+            },
             "nullable": true
           }
         },

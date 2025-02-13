@@ -12,7 +12,7 @@ namespace Intern_Alta.Controllers
     {
         private readonly IDocTypeService _docTypeService;
 
-        // Inject IDocTypeService qua constructor
+        
         public DocumentTypeController(IDocTypeService docTypeService)
         {
             _docTypeService = docTypeService ?? throw new ArgumentNullException(nameof(docTypeService));

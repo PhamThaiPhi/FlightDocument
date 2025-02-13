@@ -6,16 +6,16 @@ namespace Intern_Alta.Models
     {
         [Required]
         [StringLength(255)]
-        public string Username { get; set; } // Tên đăng nhập
+        public string Username { get; set; } 
 
         [Required]
         [StringLength(255)]
-        public string Password { get; set; } // Mật khẩu
+        public string Password { get; set; } 
 
         [Required]
         [StringLength(255)]
-        public string Email { get; set; } // Địa chỉ email
+        public string Email { get; set; } 
 
-        public int? RoleID { get; set; } // Khóa ngoại đến bảng Roles (có thể null)
+        public int? RoleID { get; set; } 
     }
 }

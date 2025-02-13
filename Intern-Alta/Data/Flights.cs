@@ -11,8 +11,10 @@ namespace Intern_Alta.Data
         public string FlightsNumber { get; set; }
         public int Route { get; set; }
         public DateTime? Departure { get; set; }
-        public int DocumentID { get; set; }
+        //public int DocumentID { get; set; }
         public string PointOfLoading { get; set; }
         public string PointOfUnloading { get; set; }
+
+        public virtual ICollection<Document>? Documents { get; set; }
     }
 }

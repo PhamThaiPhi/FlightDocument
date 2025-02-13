@@ -8,25 +8,25 @@ namespace Intern_Alta.Data
     public class User
     {
         [Key]
-        public int UserID { get; set; } // Khóa chính cho người dùng
+        public int UserID { get; set; }
 
         [Required]
         [StringLength(255)]
-        public string Username { get; set; } // Tên đăng nhập
+        public string Username { get; set; } 
 
         [Required]
         [StringLength(255)]
-        public string Password { get; set; } // Mật khẩu
+        public string Password { get; set; } 
 
         [Required]
         [StringLength(255)]
-        public string Email { get; set; } // Địa chỉ email
+        public string Email { get; set; } 
 
-        public int? RoleID { get; set; } // Khóa ngoại đến bảng Roles (có thể null)
+        public int? RoleID { get; set; } 
 
         [ForeignKey("RoleID")]
-        public virtual Role Role { get; set; } // Tham chiếu đến bảng Roles
+        public virtual Role Role { get; set; } 
 
-        public DateTime CreatedAt { get; set; } = DateTime.Now; // Ngày tạo
+        public DateTime CreatedAt { get; set; } = DateTime.Now; 
     }
 }

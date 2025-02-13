@@ -18,27 +18,27 @@ namespace Intern_Alta.Controllers
             _documentService = documentService;
         }
 
-        // Lấy tất cả tài liệu
+    
         [HttpGet]
         public ActionResult<List<Document>> GetAllDocuments()
         {
             var documents = _documentService.GetAllDocuments();
-            return Ok(documents); // Trả về danh sách tài liệu
+            return Ok(documents); 
         }
 
-        // Lấy tài liệu theo ID
+       
         [HttpGet("{id}")]
         public ActionResult<Document> GetDocumentById(int id)
         {
             var document = _documentService.GetDocumentById(id);
             if (document == null)
             {
-                return NotFound(); // Trả về 404 nếu tài liệu không tồn tại
+                return NotFound();
             }
-            return Ok(document); // Trả về tài liệu
+            return Ok(document);
         }
 
-        // Tạo mới tài liệu
+      
         [HttpPost]
         public IActionResult Create(DocModel model)
         {
@@ -57,24 +57,24 @@ namespace Intern_Alta.Controllers
                 return StatusCode(500, new { Message = $"Internal server error: {ex.Message}" });
             }
         }
-        // Cập nhật tài liệu theo ID
+  
         [HttpPut("{id}")]
         public ActionResult<Document> UpdateDocument(int id, [FromBody] DocModel document)
         {
             var updatedDocument = _documentService.UpdateDocument(id, document);
-            return Ok(updatedDocument); // Trả về tài liệu đã cập nhật
+            return Ok(updatedDocument); 
         }
 
-        // Xóa tài liệu theo ID
+       
         [HttpDelete("{id}")]
         public ActionResult DeleteDocument(int id)
         {
             var success = _documentService.DeleteDocument(id);
             if (!success)
             {
-                return NotFound(); // Trả về 404 nếu tài liệu không tồn tại
+                return NotFound(); 
             }
-            return NoContent(); // Trả về 204 khi xóa thành công
+            return NoContent(); 
         }
     }
 }
